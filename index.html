@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content>
+        <meta name="author" content>
+
+        <title>Mon portfolio</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- MAIN STYLE -->
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+    </head>
+    <body>
+        <!-- BACK TO TOP BUTTON -->
+        
+        <!-- Loader -->
+        <div class="cs-loader">
+            <style>
+                body {
+          margin: 0;
+          padding: 0;
+          background:#1b0544;
+        }
+        
+        .cs-loader {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+        }
+        
+        .cs-loader-inner {
+          transform: translateY(-50%);
+          top: 50%;
+          position: absolute;
+          width: calc(100% - 200px);
+          color: #FFF;
+          padding: 0 100px;
+          text-align: center;
+        }
+        .cs-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#1b0544;
+  transition: opacity 1s ease; /* Transition de 1 seconde pour l'opacité */
+}
+
+.cs-loader-hidden {
+  opacity: 0; /* Rendre l'élément invisible */
+  pointer-events: none; /* Empêcher l'interaction avec l'élément quand il est masqué */
+}
+
+        
+        .cs-loader-inner label {
+          font-size: 20px;
+          opacity: 0;
+          display:inline-block;
+        }
+        
+        @keyframes lol {
+          0% {
+            opacity: 0;
+            transform: translateX(-300px);
+          }
+          33% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+          66% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+          100% {
+            opacity: 0;
+            transform: translateX(300px);
+          }
+        }
+        
+        @-webkit-keyframes lol {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateX(-300px);
+          }
+          33% {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+          }
+          66% {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+          }
+          100% {
+            opacity: 0;
+            -webkit-transform: translateX(300px);
+          }
+        }
+        
+        .cs-loader-inner label:nth-child(6) {
+          -webkit-animation: lol 3s infinite ease-in-out;
+          animation: lol 3s infinite ease-in-out;
+        }
+        
+        .cs-loader-inner label:nth-child(5) {
+          -webkit-animation: lol 3s 100ms infinite ease-in-out;
+          animation: lol 3s 100ms infinite ease-in-out;
+        }
+        
+        .cs-loader-inner label:nth-child(4) {
+          -webkit-animation: lol 3s 200ms infinite ease-in-out;
+          animation: lol 3s 200ms infinite ease-in-out;
+        }
+        
+        .cs-loader-inner label:nth-child(3) {
+          -webkit-animation: lol 3s 300ms infinite ease-in-out;
+          animation: lol 3s 300ms infinite ease-in-out;
+        }
+        
+        .cs-loader-inner label:nth-child(2) {
+          -webkit-animation: lol 3s 400ms infinite ease-in-out;
+          animation: lol 3s 400ms infinite ease-in-out;
+        }
+        
+        .cs-loader-inner label:nth-child(1) {
+          -webkit-animation: lol 3s 500ms infinite ease-in-out;
+          animation: lol 3s 500ms infinite ease-in-out;
+        }
+            </style>
+            <div class="cs-loader-inner">
+              <label>●</label>
+              <label>●</label>
+              <label>●</label>
+              <label>●</label>
+              <label>●</label>
+              <label>●</label>
+            </div>
+          </div>
+
+     <div id="content" style="display: none;">
+
+        <a id="button" href="#" ></a>
+        <style>
+        #button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #8b1313;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* #button::before {
+    font-family: "unicons";
+    content: '\e821'; 
+} */
+#button::after {
+    content: '\e821'; 
+    font-family: "unicons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  /* color: #fff; */
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+    
+        </style>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a style="color: #1b0544" class="navbar-brand" href="index.html"><i
+                        class='uil uil-user'></i> portfolio</a>
+
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"><span
+                                    data-hover="About">A Propos de
+                                    moi</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#project" class="nav-link"><span
+                                    data-hover="Projects">Mes Projets</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link"><span
+                                    data-hover="Formation">Formation</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link"><span
+                                    data-hover="Contact Me">Me
+                                    Contacter</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li>
+                            <div class="ml-lg-4">
+                                <div
+                                    class="color-mode d-lg-flex justify-content-center align-items-center">
+                                    <i class="color-mode-icon"></i>
+                                    <!-- Mode Clair/Mode Sombre -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ABOUT -->
+        <section
+            class="about full-screen d-lg-flex justify-content-center align-items-center"
+            id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div
+                        class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                        <div class="about-text">
+                            <small class="small-text">Bienvenue sur <span
+                                    class="mobile-block">mon portfolio en
+                                    ligne</span></small>
+                            <h1 class="animated animated-text">
+                                <span style="color: #1b0544"  class="mr-2">Salut la communaute, je me
+                                    nomme Boris</span><br>
+                                <span  class="mr-2" style="color: #1b0544">Je suis un</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Web
+                                        Designer</span>
+                                    <span class="animated-item">Developpeur
+                                        fullstack</span>
+                                    <span class="animated-item">Integrateur
+                                        API</span>
+                                </div>
+                            </h1>
+                            <br>
+
+                            <p>Construire un produit réussi est un défi. Je suis
+                                très motivé dans la conception d'expériences
+                                utilisateur, d'interfaces et de développement
+                                web.</p>
+
+                            <div class="custom-btn-group mt-4">
+                                <a href="./images/project/file/CV.pdf" target="_blank"  aria-label="Télécharger mon CV" class="btn mr-lg-2 custom-btn ">
+                                    <i class='uil uil-file-alt'></i> 
+                                    Télécharger mon CV
+                                  </a>
+                                  
+                                  
+                                <a href="#contact"
+                                    class="btn custom-btn custom-btn-bg custom-btn-link">Me
+                                    contacter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div data-aos="fade-down">
+
+                            <div class="about-image svg moi">
+                                <img src="images/moi.png" class="img-fluid "
+                                    alt="svg image">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="project py-5" id="project">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-11 text-center mx-auto col-12">
+
+                        <div class="col-lg-8 mx-auto">
+                            <h2>Voici quelques uns de mes projets.</h2>
+                        </div>
+                        <br>
+
+                        <div class="owl-carousel owl-theme">
+
+                            <div class="item">
+                                <div class="project-info">
+                                    <img src="images/project/project_1.PNG"
+                                        class="img-fluid" alt="project image"
+                                        width="30%" style="border-radius: 2rem;">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="project-info">
+                                    <img src="./images/project/preview.png"
+                                        class="img-fluid" alt="project image" style="border-radius: 2rem;">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="project-info">
+                                    <img src="images/project/project_2.PNG"
+                                        class="img-fluid" alt="project image" style="border-radius: 2rem; ">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="project-info">
+                                    <img src="images/project/project_3.PNG"
+                                        class="img-fluid" alt="project image" style="border-radius: 2rem;">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="project-info">
+                                    <img src="images/project/project_4.PNG"
+                                        class="img-fluid" alt="project image" style="border-radius: 2rem;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section
+            class="resume py-5 d-lg-flex justify-content-center align-items-center"
+            id="resume">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-4">Mes Competences</h2>
+
+                        <div class="timeline">
+
+                            <div class="timeline-info">
+                                <h3><span>Maquettage</span><small></small></h3>
+                                <p>En tant que spécialiste du maquettage, je crée des prototypes interactifs et des maquettes visuelles qui illustrent le design, la structure et l'ergonomie de l'application.</p>
+                            </div>
+
+                            <div class="timeline-info">
+                                <h3><span>Réalisation d'une Interface Statique Adaptable</span><small></small></h3>
+                                <p>Je développe des interfaces statiques qui s’adaptent de manière fluide à différents appareils et résolutions.</p>
+                            </div>
+
+                            <div class="timeline-info">
+                                <h3><span>Réalisation d'une Interface Dynamique Adaptable</h3>
+                                    <p>Je crée des interfaces dynamiques qui s'ajustent en temps réel et s'adaptent aux différentes tailles d'écran.</p>
+
+                                </div>
+
+                                <div class="timeline-info">
+                                    <h3><span>Gestion de Base de Données<small></small></h3>
+                                        <p>Je gère les bases de données pour assurer leur efficacité et leur intégrité.</p>
+                                    </div>
+                         
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4 mobile-mt-2">Formations</h2>
+
+                            <div class="timeline">
+                                <div class="timeline-wrapper">
+                                    <div class="timeline-yr">
+                                        <span>2024</span>
+                                    </div>
+                                    <div class="timeline-info">
+                                        <h3><span>Formation a l'ADN</span></h3>
+                                        <p>Pour rester à la pointe des nouvelles technologies et des meilleures pratiques dans mon domaine, j'ai suivi une formation intensive en Developpement Web & Mobile.<br><br> Cette formation m'a permis d'acquérir des compétences approfondies dans le domaine de la tech, tout en me fournissant les outils nécessaires pour exceller dans le monde du travail. <br><br> Grâce à ce parcours, j'ai renforcé ma capacité à developper des projets web et mobile avec une efficacité accrée, ce qui me permet aujourd'hui d'apporter une valeur ajoutée significative à mes projets et de répondre efficacement aux besoins de mes clients.</p>
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="contact py-5" id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 mr-lg-5 col-12">
+                            <div class="google-map w-100">
+                            <!-- image en ligne -->
+                             <img src="./images/telephone-1460517_1280.png" alt="" width="500">
+                            
+                            </div>
+
+                         
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="contact-form">
+                                <h2 class="mb-4">Vous avez un projet a nous confier?
+                                    <br>
+                                    <h2 class="mb-4">Contactez-moi</h2>
+                                    
+                                </h2>
+
+                                <form action method="get">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <input type="text"
+                                                class="form-control" name="name"
+                                                placeholder="Votre Nom"
+                                                id="name">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="email"
+                                                class="form-control"
+                                                name="email" placeholder="Email"
+                                                id="email">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea name="message" rows="6"
+                                                class="form-control"
+                                                id="message"
+                                                placeholder="Message"></textarea>
+                                        </div>
+
+                                        <div class="ml-lg-auto col-lg-5 col-12">
+                                            <input type="submit"
+                                                class="form-control submit-btn"
+                                                value="Envoyer">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer py-5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <!-- <p class="copyright-text text-center">Copyright
+                                &copy; 2019 Company Name . All rights
+                                reserved</p> -->
+                            <p class="copyright-text text-center">Designed by <a
+                                    rel="nofollow"
+                                    href="https://github.com/borisADN">@Boris</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/Headroom.js"></script>
+            <script src="js/jQuery.headroom.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/smoothscroll.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          
+            <script>
+             
+                window.onload = function() {
+                    setTimeout(function() {
+                        const loader = document.querySelector('.cs-loader');
+                        loader.classList.add('cs-loader-hidden'); // Ajouter la classe pour la transition
+            
+                        // Optionnel : Retirer l'élément du DOM après la transition (1s)
+                        setTimeout(function() {
+                            loader.style.display = 'none'; // Masquer complètement après la transition
+                            document.body.style.backgroundColor = '#fff'; 
+                            document.getElementById('content').style.display = 'block';// Changer l'arrière-plan après chargement
+                        }, 1000); // 1000ms = 1s (le temps de la transition)
+                    }, 7000); // 7000 ms = 7 secondes d'animation
+                };
+                var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+            </script>
+            <script>
+            AOS.init();
+            </script>
+            
+        </body>
+    </html>
